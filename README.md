@@ -3,7 +3,7 @@
 # Interface Redis
 
 [![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](LICENSE.md)
-[![Version](https://img.shields.io/badge/version-beta-orange.svg)](https://github.com/antelopejs/antelope)
+[![Version](https://img.shields.io/badge/version-beta-orange.svg)](https://github.com/AntelopeJS/redis/tree/main/.antelope/output/redis/beta)
 
 A streamlined interface for Redis operations in TypeScript. Interface Redis provides direct access to Redis client functionality, allowing you to interact with Redis servers for key-value storage, pub/sub messaging, and other Redis operations with a clean, promise-based API.
 
