@@ -30,7 +30,7 @@ This is the development version (`beta`) of the Interface Redis. It is currently
 
 | Version | Link                                                                                    | Status                                        |
 | ------- | --------------------------------------------------------------------------------------- | --------------------------------------------- |
-| beta    | [redis@beta](https://github.com/AntelopeJS/redis/tree/main/.antelope/output/redis/beta) | Waiting validation from community to go in v1 |
+| beta    | [redis@beta](https://github.com/AntelopeJS/redis/tree/main/output/redis/beta) | Waiting validation from community to go in v1 |
 | 1       | _Not yet released_                                                                      | Planned stable release                        |
 
 ## License
