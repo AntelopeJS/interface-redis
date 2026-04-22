@@ -29,13 +29,6 @@
     },
     "./package.json": "./package.json"
   },
-  "typesVersions": {
-    "*": {
-      "*": [
-        "dist/*.d.ts"
-      ]
-    }
-  },
   "scripts": {
     "build": "rimraf dist && tsc",
     "format": "biome format --write .",
