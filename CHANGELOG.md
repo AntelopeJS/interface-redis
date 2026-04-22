@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.4
+
+[compare changes](https://github.com/AntelopeJS/interface-redis/compare/v0.0.3...v0.0.4)
+
+### 🏡 Chore
+
+- Bump @antelopejs/interface-core to ^0.0.3 ([bb2183f](https://github.com/AntelopeJS/interface-redis/commit/bb2183f))
+
+### ❤️ Contributors
+
+- Antony Rizzitelli <upd4ting@gmail.com>
+
 ## v0.0.3
 
 [compare changes](https://github.com/AntelopeJS/interface-redis/compare/v0.0.2...v0.0.3)
