@@ -1,6 +1,18 @@
 # Changelog
 
 
+## v0.0.5
+
+[compare changes](https://github.com/AntelopeJS/interface-redis/compare/v0.0.4...v0.0.5)
+
+### 🩹 Fixes
+
+- Remove wildcard typesVersions that breaks root import resolution ([9c93ac9](https://github.com/AntelopeJS/interface-redis/commit/9c93ac9))
+
+### ❤️ Contributors
+
+- Antony Rizzitelli <upd4ting@gmail.com>
+
 ## v0.0.4
 
 [compare changes](https://github.com/AntelopeJS/interface-redis/compare/v0.0.3...v0.0.4)
