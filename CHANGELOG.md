@@ -1,6 +1,34 @@
 # Changelog
 
 
+## v0.0.3
+
+[compare changes](https://github.com/AntelopeJS/interface-redis/compare/v0.0.2...v0.0.3)
+
+### 🩹 Fixes
+
+- Update @antelopejs/redis test dependency to 1.0.1 ([13a4dde](https://github.com/AntelopeJS/interface-redis/commit/13a4dde))
+
+### 💅 Refactors
+
+- Switch test modules from local to npm packages ([34aa910](https://github.com/AntelopeJS/interface-redis/commit/34aa910))
+
+### 📖 Documentation
+
+- Rewrite documentation for production readiness ([e7774a6](https://github.com/AntelopeJS/interface-redis/commit/e7774a6))
+
+### 🏡 Chore
+
+- Update dependencies ([5669c8f](https://github.com/AntelopeJS/interface-redis/commit/5669c8f))
+
+### 🤖 CI
+
+- Add test step to CI workflow ([50a56c3](https://github.com/AntelopeJS/interface-redis/commit/50a56c3))
+
+### ❤️ Contributors
+
+- Antony Rizzitelli <upd4ting@gmail.com>
+
 ## v0.0.2
 
 
