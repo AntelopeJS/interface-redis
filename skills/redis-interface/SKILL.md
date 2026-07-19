@@ -71,4 +71,4 @@ Declare `"antelopeJs": { "implements": ["@antelopejs/interface-redis"] }` in the
 
 ## Deeper reference
 
-See `dist/index.d.ts` in this package for the exact typed surface, and the repository's `docs/1.introduction.md` (https://github.com/AntelopeJS/interface-redis - not shipped in the npm package) for usage guides: Overview, Getting Started, GetClient, Key-Value Operations, Pub/Sub Messaging, Additional Operations - do not duplicate them here.
+See `dist/index.d.ts` in this package for the exact typed surface, and this package's `docs/1.introduction.md` for usage guides: Overview, Getting Started, GetClient, Key-Value Operations, Pub/Sub Messaging, Additional Operations - do not duplicate them here.
