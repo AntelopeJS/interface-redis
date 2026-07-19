@@ -52,7 +52,10 @@ export async function start() {
 
 export async function stop() {
   await client.quit();
-  void internal.UnsetClient(); // re-latch: next GetClient() waits for the next start()
+  // Re-latch: next GetClient() waits for the next start(). UnsetClient() returns
+  // the new pending internal.client; `void` discards it on purpose (same pattern
+  // as the package's own initialization).
+  void internal.UnsetClient();
 }
 ```
 
