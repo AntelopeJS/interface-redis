@@ -63,6 +63,8 @@
   },
   "antelopeJs": {
     "test": "src/antelope.test.ts",
-    "skills": ["./skills"]
+    "skills": [
+      "./skills"
+    ]
   }
 }
