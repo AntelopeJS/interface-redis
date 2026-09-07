@@ -24,7 +24,11 @@ Add `@antelopejs/interface-redis` to the module's `dependencies`, and make sure 
 ```ts
 import { GetClient } from "@antelopejs/interface-redis";
 
-export async function cacheResponse(key: string, data: string, ttlSeconds: number) {
+export async function cacheResponse(
+  key: string,
+  data: string,
+  ttlSeconds: number,
+) {
   const client = await GetClient();
   await client.set(key, data, "EX", ttlSeconds);
 }
