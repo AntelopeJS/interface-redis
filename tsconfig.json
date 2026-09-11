@@ -3,7 +3,6 @@
     "target": "esnext",
     "module": "commonjs",
     "lib": ["ES2022"],
-    "moduleResolution": "node",
     "types": ["node", "mocha"],
     "strict": true,
     "experimentalDecorators": true,
@@ -12,9 +11,8 @@
     "sourceMap": true,
     "outDir": "dist",
     "rootDir": "src",
-    "baseUrl": ".",
     "paths": {
-      "@antelopejs/interface-redis": ["src/index.ts"]
+      "@antelopejs/interface-redis": ["./src/index.ts"]
     },
     "esModuleInterop": true
   },

@@ -1,6 +1,5 @@
 # Changelog
 
-
 ## v0.0.8
 
 [compare changes](https://github.com/AntelopeJS/interface-redis/compare/v0.0.7...v0.0.8)
@@ -83,7 +82,6 @@
 
 ## v0.0.2
 
-
 ### 🚀 Enhancements
 
 - Add Redis interface implementation ([b12b5b4](https://github.com/AntelopeJS/interface-redis/commit/b12b5b4))
@@ -106,4 +104,3 @@
 
 - Antony Rizzitelli <upd4ting@gmail.com>
 - Glastis ([@Glastis](http://github.com/Glastis))
-

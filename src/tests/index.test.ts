@@ -1,5 +1,5 @@
-import { GetClient } from "@antelopejs/interface-redis";
 import { expect } from "chai";
+import { GetClient } from "@antelopejs/interface-redis";
 
 describe("Redis Interface - GetClient", () => {
   it("should return a functional Redis client", async () => GetClientTest());
