@@ -13,8 +13,8 @@ importers:
         version: 5.10.1
     devDependencies:
       '@antelopejs/core':
-        specifier: ^1.13.3
-        version: 1.13.3
+        specifier: ^1.13.4
+        version: 1.13.4
       '@antelopejs/interface-core':
         specifier: '>=0.1.1 <1.0.0'
         version: 0.1.1
@@ -63,8 +63,8 @@ importers:
 
 packages:
 
-  '@antelopejs/core@1.13.3':
-    resolution: {integrity: sha512-6xypCf+zUHUC8VdSJtacB+NGYAYVMBjVwHamwSz/GrbwbHGkBtM00b7FSK81AeU8xSpExuHAXcfjk8NTjqQ1bQ==}
+  '@antelopejs/core@1.13.4':
+    resolution: {integrity: sha512-nr28aF/uOLqfZ72HPIxt7cv3YfgAeXEemEZm7mOPCbAr1yXB6CMyBWFHlmlk/vdFChAunnsGwDYqWCDnjTXRnA==}
     engines: {node: '>=20.19'}
     hasBin: true
 
@@ -2481,7 +2481,7 @@ packages:
 
 snapshots:
 
-  '@antelopejs/core@1.13.3':
+  '@antelopejs/core@1.13.4':
     dependencies:
       '@antelopejs/interface-core': 0.1.1
       '@clack/prompts': 1.8.1
