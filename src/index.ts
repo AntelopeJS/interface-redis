@@ -34,13 +34,17 @@ export namespace internal {
  * // Using Redis pub/sub
  * async function setupNotifications() {
  *   const client = await GetClient();
- *   const subscriber = client.duplicate();
+ *   const subscriber = client.duplicate({ lazyConnect: true });
  *
- *   await subscriber.subscribe('notifications', (message) => {
- *     console.log(`Received notification: ${message}`);
+ *   subscriber.on('message', (channel, message) => {
+ *     console.log(`[${channel}] ${message}`);
  *   });
+ *   await subscriber.connect();
+ *   await subscriber.subscribe('notifications');
+ *   return subscriber; // The caller owns this connection; quit it on shutdown.
  * }
  * ```
+ * The subscribe callback acknowledges the subscription; messages arrive on the message event.
  */
 export function GetClient(): Promise<Redis> {
   return internal.client;
