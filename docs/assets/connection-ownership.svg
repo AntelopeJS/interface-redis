@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 390" role="img" aria-labelledby="title desc">
+  <title id="title">Redis command and subscriber connections</title>
+  <desc id="desc">Use the shared client for commands and publishing. Duplicate it for subscriptions, listen for message events, and quit only the owned duplicate during cleanup.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 8 4 0 8" fill="#627d98"/></marker></defs>
+  <rect width="800" height="390" rx="16" fill="#f4f7fb"/>
+  <g font-family="system-ui, sans-serif" fill="#17324d">
+    <text x="28" y="38" font-size="22" font-weight="700">Two connections, two owners</text>
+    <rect x="28" y="75" width="330" height="96" rx="10" fill="#e2edf8" stroke="#b0c9e0"/>
+    <text x="46" y="108" font-size="18" font-weight="700">Shared client · GetClient()</text><text x="46" y="139" font-size="16">Provider owns shutdown</text>
+    <path d="M358 122H565" stroke="#627d98" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="382" y="108" font-size="14">get / set / publish</text>
+    <path d="M193 171V221" stroke="#627d98" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="208" y="202" font-size="14">duplicate({ lazyConnect: true })</text>
+    <rect x="28" y="231" width="330" height="96" rx="10" fill="#e2f3ec" stroke="#91c7ae"/>
+    <text x="46" y="265" font-size="18" font-weight="700">Dedicated subscriber</text><text x="46" y="297" font-size="16">Your feature calls quit() on cleanup</text>
+    <rect x="578" y="75" width="194" height="252" rx="12" fill="#17324d"/>
+    <text x="612" y="192" fill="#fff" font-size="24" font-weight="700">Redis</text><text x="598" y="222" fill="#d5e5f3" font-size="15">Commands + pub/sub</text>
+    <path d="M578 280H369" stroke="#627d98" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="390" y="265" font-size="14">message events</text>
+    <text x="28" y="365" font-size="16">subscribe() acknowledges registration. Published messages arrive on the event handler.</text>
+  </g>
+</svg>
