@@ -55,15 +55,25 @@ export async function readCachedPage(path: string) {
 
 ## Documentation
 
-- [Introduction](https://interfaces.antelopejs.com/docs/redis/introduction)
+- [Introduction and client reference](./docs/1.introduction.md)
 
 ## Compatibility
 
-| Package                             | Range            |
-| ----------------------------------- | ---------------- |
-| `@antelopejs/interface-core` (peer) | `>=0.1.1 <1.0.0` |
-| `ioredis` (dependency)              | `^5.10.1`        |
-| `@antelopejs/core`                  | `1.x`            |
+Requires AntelopeJS core `1.x` and the following peer dependency:
+
+<!-- docs-compat: ./package.json#peerDependencies -->
+
+| Package                      | Range            |
+| ---------------------------- | ---------------- |
+| `@antelopejs/interface-core` | `>=0.1.1 <1.0.0` |
+
+Driver dependency:
+
+<!-- docs-compat: ./package.json#dependencies -->
+
+| Package   | Range     |
+| --------- | --------- |
+| `ioredis` | `^5.10.1` |
 
 ## Contributing
 
