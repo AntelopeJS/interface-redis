@@ -1,12 +1,17 @@
 {
   "name": "@antelopejs/interface-redis",
   "version": "0.0.8",
-  "description": "AntelopeJS interface for Redis client operations",
+  "description": "AntelopeJS interface for direct access to the shared Redis client",
   "keywords": [
     "antelopejs",
+    "cache",
     "interface",
     "redis"
   ],
+  "homepage": "https://interfaces.antelopejs.com/docs/redis",
+  "bugs": {
+    "url": "https://github.com/AntelopeJS/interface-redis/issues"
+  },
   "license": "Apache-2.0",
   "repository": {
     "type": "git",
