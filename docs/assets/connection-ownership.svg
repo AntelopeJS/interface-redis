@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="700" viewBox="0 0 480 700" role="img" aria-labelledby="title desc">
+  <title id="title">Redis command and subscriber connections</title>
+  <desc id="desc">Use the shared client for commands and publishing. Duplicate it for subscriptions, listen for message events, and quit only the owned duplicate during cleanup.</desc>
+  <defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 8 4 0 8" fill="#627d98"/></marker></defs>
+  <rect width="480" height="700" rx="16" fill="#f4f7fb"/>
+  <g font-family="system-ui, sans-serif" fill="#17324d" font-size="18">
+    <text x="24" y="36" font-size="24" font-weight="700">Two connections, two owners</text>
+    <rect x="24" y="65" width="400" height="92" rx="10" fill="#e2edf8" stroke="#b0c9e0"/>
+    <text x="44" y="100" font-size="22" font-weight="700">Shared client · GetClient()</text><text x="44" y="132">Provider owns shutdown</text>
+    <path d="M224 157V219" stroke="#627d98" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="240" y="195" font-size="16">get / set / publish</text>
+    <rect x="24" y="231" width="400" height="92" rx="10" fill="#17324d"/>
+    <text x="44" y="267" fill="#fff" font-size="24" font-weight="700">Redis</text><text x="44" y="297" fill="#d5e5f3">Commands + pub/sub</text>
+    <path d="M224 323V385" stroke="#627d98" stroke-width="2" marker-end="url(#arrow)"/>
+    <text x="240" y="360" font-size="16">message events</text>
+    <rect x="24" y="397" width="400" height="100" rx="10" fill="#e2f3ec" stroke="#91c7ae"/>
+    <text x="44" y="432" font-size="22" font-weight="700">Dedicated subscriber</text><text x="44" y="465">Your feature calls quit() on cleanup</text>
+    <path d="M424 111H448V447H424" fill="none" stroke="#627d98" stroke-width="2" stroke-dasharray="5 5" marker-end="url(#arrow)"/>
+    <text x="24" y="535" font-weight="600">Dashed path: create your subscriber</text><text x="24" y="564">client.duplicate({ lazyConnect: true })</text>
+    <text x="24" y="610">subscribe() acknowledges registration.</text><text x="24" y="640">Published messages arrive on the</text><text x="24" y="669">message event handler.</text>
+  </g>
+</svg>
