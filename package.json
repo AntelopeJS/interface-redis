@@ -1,6 +1,6 @@
 {
   "name": "@antelopejs/interface-redis",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "AntelopeJS interface for direct access to the shared Redis client",
   "keywords": [
     "antelopejs",
