@@ -1,0 +1,8 @@
+{
+  "rules": {
+    "antelopejs/no-comments": 7,
+    "antelopejs/require-assertion": 14,
+    "typescript/unbound-method": 4
+  },
+  "oversizeFiles": {}
+}
