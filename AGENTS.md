@@ -1,6 +1,6 @@
 # interface-redis
 
-The AntelopeJS interface that hands modules the project's shared ioredis client, published as `@antelopejs/interface-redis`. The whole contract lives in `src/index.ts`: `GetClient()` for consumers, and the `@internal` `internal` namespace (`client`, `SetClient`, `UnsetClient`) that the implementing module, `@antelopejs/redis` (AntelopeJS/redis), uses to latch the client in `start()` and re-latch it in `stop()`. Renaming or changing any of these breaks that provider.
+The AntelopeJS interface that hands modules the project's shared ioredis client, published as `@antelopejs/interface-redis`. The whole contract lives in `src/index.ts`: `GetClient()` for consumers, and the `@internal` `internal` namespace (`client`, `SetClient`, `UnsetClient`) that the implementing module, `@antelopejs/redis` (AntelopeJS/redis), uses to latch the client in `start()` and reset it with `UnsetClient()` in `stop()`. Renaming or changing any of these breaks that provider.
 
 ## Versioning
 
@@ -11,7 +11,7 @@ The AntelopeJS interface that hands modules the project's shared ioredis client,
 
 - `pnpm test` builds `dist`, then runs `ajs module test .`. `src/antelope.test.ts` (`antelopeJs.test` in `package.json`) describes the test project: it installs `@antelopejs/redis` from npm at a pinned version with `useMock: true`, so no Redis server is needed, caches it in `.antelope/cache`, and runs the compiled suites in `dist/tests`. The suites are written in `src/tests`.
 - `knip.config.ts` lists `src/tests/**/*.test.ts` and `src/antelope.test.ts` as entries, because only `ajs module test` loads them.
-- `ajs module test` installs the modules with `corepack pnpm@<packageManager>` when corepack is on `PATH`, and with the `pnpm` on `PATH` otherwise. Node 25 and later do not bundle corepack, so there install pnpm 10.6.5 another way.
+- `ajs module test` installs the modules with `corepack <packageManager>` (`corepack pnpm@10.6.5`) when corepack is on `PATH`, and with the `pnpm` on `PATH` otherwise. Node 25 and later do not bundle corepack, so there install pnpm 10.6.5 another way.
 - `pnpm run checks` does not run the documentation check (Markdown links and the `docs-compat` tables in `README.md` and `docs/`). CI runs it through the `docs-files` input in `.github/workflows/ci.yml`. To run it locally, clone `AntelopeJS/tooling-configs` at `v0.0.9` (the ref ci-node pins), run `npm ci --prefix actions/docs --omit=dev`, then run `node <clone>/actions/docs/check.mjs --files "$(printf 'README.md\ndocs')"` from this repository.
 
 ## Shipped files
