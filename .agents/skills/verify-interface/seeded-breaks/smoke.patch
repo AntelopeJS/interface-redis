@@ -1,0 +1,13 @@
+diff --git a/src/index.ts b/src/index.ts
+index 657003c..4cec56e 100644
+--- a/src/index.ts
++++ b/src/index.ts
+@@ -12,7 +12,7 @@ export namespace internal {
+     });
+     return client;
+   };
+-  void UnsetClient();
++
+ }
+ 
+ /**

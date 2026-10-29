@@ -1,0 +1,13 @@
+diff --git a/src/index.ts b/src/index.ts
+index 657003c..1d4f477 100644
+--- a/src/index.ts
++++ b/src/index.ts
+@@ -8,7 +8,7 @@ export namespace internal {
+   export let SetClient: (client: Redis) => void;
+   export const UnsetClient = () => {
+     client = new Promise((resolve) => {
+-      SetClient = resolve;
++      SetClient = () => resolve(undefined as never);
+     });
+     return client;
+   };

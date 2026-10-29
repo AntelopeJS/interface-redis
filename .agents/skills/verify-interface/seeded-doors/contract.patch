@@ -1,0 +1,12 @@
+diff --git a/src/index.ts b/src/index.ts
+index 657003c..9d875ca 100644
+--- a/src/index.ts
++++ b/src/index.ts
+@@ -46,6 +46,6 @@ export namespace internal {
+  * ```
+  * The subscribe callback acknowledges the subscription; messages arrive on the message event.
+  */
+-export function GetClient(): Promise<Redis> {
++export function GetRedisClient(): Promise<Redis> {
+   return internal.client;
+ }
