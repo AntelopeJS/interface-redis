@@ -59,7 +59,7 @@ export async function readCachedPage(path: string) {
 
 ## Compatibility
 
-Requires AntelopeJS core `1.x` and the following peer dependency:
+The interface has one AntelopeJS peer dependency:
 
 <!-- antelopejs-docs-compat:start -->
 
@@ -69,7 +69,13 @@ Requires AntelopeJS core `1.x` and the following peer dependency:
 
 <!-- antelopejs-docs-compat:end -->
 
-Driver dependency:
+The Redis driver is the runtime dependency:
+
+<!-- docs-compat: ./package.json#dependencies -->
+
+| Package   | Range     |
+| --------- | --------- |
+| `ioredis` | `^5.10.1` |
 
 ## Contributing
 
