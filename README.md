@@ -1,19 +1,19 @@
-# @antelopejs/interface-redis
+# `@antelopejs/interface-redis`
 
 <div align="center">
-<a href="https://www.npmjs.com/package/@antelopejs/interface-redis"><img alt="npm" src="https://img.shields.io/npm/v/@antelopejs/interface-redis?style=for-the-badge&labelColor=000000&color=000000"></a>
-<a href="./LICENSE"><img alt="License" src="https://img.shields.io/npm/l/@antelopejs/interface-redis?style=for-the-badge&labelColor=000000&color=000000"></a>
-<a href="https://discord.gg/g4pFt6eXqu"><img alt="Discord" src="https://img.shields.io/badge/Discord-18181B?logo=discord&style=for-the-badge&color=000000"></a>
-<a href="https://interfaces.antelopejs.com/docs/redis"><img alt="Docs" src="https://img.shields.io/badge/Docs-18181B?style=for-the-badge&color=000000"></a>
+<a href="https://www.npmjs.com/package/@antelopejs/interface-redis"><img data-illustration alt="npm" src="https://img.shields.io/npm/v/@antelopejs/interface-redis?style=for-the-badge&labelColor=000000&color=000000"></a>
+<a href="./LICENSE"><img data-illustration alt="License" src="https://img.shields.io/npm/l/@antelopejs/interface-redis?style=for-the-badge&labelColor=000000&color=000000"></a>
+<a href="https://discord.gg/g4pFt6eXqu"><img data-illustration alt="Discord" src="https://img.shields.io/badge/Discord-18181B?logo=discord&style=for-the-badge&color=000000"></a>
+<a href="https://interfaces.antelopejs.com/docs/redis"><img data-illustration alt="Docs" src="https://img.shields.io/badge/Docs-18181B?style=for-the-badge&color=000000"></a>
 </div>
 
-Direct access to the Redis client of an AntelopeJS project: one shared connection for caching, counters, pub/sub and any other Redis command.
+The AntelopeJS interface for direct access to the project's Redis client. Modules share one connection for caching, counters, publishing, and any other Redis command. A subscription needs a connection of its own.
 
 ## What it offers
 
-- `GetClient()` resolves to the project's shared [ioredis](https://github.com/redis/ioredis) client once the connection is up.
-- The client exposes every Redis command, transactions and pipelines.
-- Every module reuses the one connection that the implementing module opens and configures.
+- `GetClient()` resolves to the project's shared [ioredis](https://github.com/redis/ioredis) client once the implementing module has created it.
+- The client is an ioredis `Redis` instance, with every Redis command, transactions, and pipelines.
+- Every module reuses the one connection that the implementing module opens, configures, and quits when it stops.
 
 ## Implementations
 
