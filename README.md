@@ -9,6 +9,8 @@
 
 The AntelopeJS interface for direct access to the project's Redis client. Modules share one connection for caching, counters, publishing, and any other Redis command. A subscription needs a connection of its own.
 
+Part of [AntelopeJS](https://github.com/AntelopeJS/antelopejs), the TypeScript framework where modules depend on contracts and the application chooses the provider. Built by the team behind [AntelopeJS DMS](https://github.com/AntelopeJS/dms).
+
 ## What it offers
 
 - `GetClient()` resolves to the project's shared [ioredis](https://github.com/redis/ioredis) client once the implementing module has created it.
