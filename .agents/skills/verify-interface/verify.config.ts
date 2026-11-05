@@ -12,7 +12,6 @@ const config: VerifyConfig<typeof RedisInterface> = {
     contract: {
       globs: ["src/index.ts", "package.json"],
       funnels: [],
-      containments: [],
       why: "GetClient and the exports map are what every Redis consumer imports",
     },
     outbound: null,
@@ -20,7 +19,6 @@ const config: VerifyConfig<typeof RedisInterface> = {
     publish: {
       globs: ["package.json", ".release-it.json", "changelogen.config.json", ".github/workflows/release.yml"],
       funnels: [],
-      containments: [],
       why: "the package name and release workflow claim @antelopejs/interface-redis on npm",
     },
   },
