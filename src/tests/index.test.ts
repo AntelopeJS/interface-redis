@@ -1,5 +1,5 @@
 import { expect } from "chai";
-import { GetClient } from "@antelopejs/interface-redis";
+import { GetClient } from "..";
 
 describe("Redis Interface - Key/Value Operations", () => {
   it("should set and get a value", async () => {
