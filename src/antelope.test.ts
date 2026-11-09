@@ -5,11 +5,7 @@ export default defineConfig({
   cacheFolder: ".antelope/cache",
   modules: {
     redis: {
-      source: {
-        type: "package",
-        package: "@antelopejs/redis",
-        version: "1.0.3",
-      },
+      source: { type: "local", path: "node_modules/@antelopejs/redis" },
       config: { useMock: true },
     },
   },

@@ -11,9 +11,6 @@
     "sourceMap": true,
     "outDir": "dist",
     "rootDir": "src",
-    "paths": {
-      "@antelopejs/interface-redis": ["./src/index.ts"]
-    },
     "esModuleInterop": true
   },
   "include": ["src"]
