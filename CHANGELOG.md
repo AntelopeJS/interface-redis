@@ -1,5 +1,59 @@
 # Changelog
 
+## v0.0.10
+
+[compare changes](https://github.com/AntelopeJS/interface-redis/compare/v0.0.9...v0.0.10)
+
+### 🚀 Enhancements
+
+- **skills:** Add the verify-interface verification skill ([#28](https://github.com/AntelopeJS/interface-redis/pull/28))
+
+### 🔥 Performance
+
+- **test:** Commit the module lock of the test project ([#42](https://github.com/AntelopeJS/interface-redis/pull/42))
+- **build:** Skip the lib check in build, typecheck keeps it ([#43](https://github.com/AntelopeJS/interface-redis/pull/43))
+
+### 💅 Refactors
+
+- Clean the repo with the guardrail pack ([#25](https://github.com/AntelopeJS/interface-redis/pull/25))
+
+### 📖 Documentation
+
+- Add task-based reading paths and contract diagrams ([#20](https://github.com/AntelopeJS/interface-redis/pull/20))
+- Clarify learning paths and illustrate real outcomes ([#22](https://github.com/AntelopeJS/interface-redis/pull/22))
+- **readme:** Use one Discord invite ([#31](https://github.com/AntelopeJS/interface-redis/pull/31))
+- **github:** Send questions and ideas to Discord ([#32](https://github.com/AntelopeJS/interface-redis/pull/32))
+- **readme:** Link the package to AntelopeJS and AntelopeJS DMS ([bb100b5](https://github.com/AntelopeJS/interface-redis/commit/bb100b5))
+
+### 📦 Build
+
+- **deps:** Bump @antelopejs/tooling-configs to 0.2.17 ([#29](https://github.com/AntelopeJS/interface-redis/pull/29))
+- **deps:** Bump @antelopejs packages to the 2026-11-06 releases ([#40](https://github.com/AntelopeJS/interface-redis/pull/40))
+- **deps:** Bump @antelopejs/tooling-configs to 0.3.4 ([#41](https://github.com/AntelopeJS/interface-redis/pull/41))
+- **deps:** Bump @antelopejs/tooling-configs to 0.4.0 ([#45](https://github.com/AntelopeJS/interface-redis/pull/45))
+- **deps:** Bump @antelopejs/tooling-configs to 0.5.0 ([#47](https://github.com/AntelopeJS/interface-redis/pull/47))
+- **deps:** Bump @antelopejs/tooling-configs to 0.5.1 ([#48](https://github.com/AntelopeJS/interface-redis/pull/48))
+
+### 🏡 Chore
+
+- Adopt the guardrail pack from tooling-configs 0.2.0 ([#23](https://github.com/AntelopeJS/interface-redis/pull/23))
+- Configure Renovate with the shared preset ([#24](https://github.com/AntelopeJS/interface-redis/pull/24))
+- Land the cleanup campaign on main ([#35](https://github.com/AntelopeJS/interface-redis/pull/35))
+- **verify:** Remove seeded runs from the verification skill ([#37](https://github.com/AntelopeJS/interface-redis/pull/37))
+- **ci:** Remove the weekly mutation caller ([#38](https://github.com/AntelopeJS/interface-redis/pull/38))
+
+### ✅ Tests
+
+- Run the suite against this repository's source ([#44](https://github.com/AntelopeJS/interface-redis/pull/44))
+
+### 🤖 CI
+
+- Call ci-node.yml@v1 ([#39](https://github.com/AntelopeJS/interface-redis/pull/39))
+
+### ❤️ Contributors
+
+- Antony Rizzitelli ([@Upd4ting](http://github.com/Upd4ting))
+
 ## v0.0.9
 
 [compare changes](https://github.com/AntelopeJS/interface-redis/compare/v0.0.8...v0.0.9)
