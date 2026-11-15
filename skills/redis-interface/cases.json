@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "cases": [
+    {
+      "id": "redis-subscriber-clean",
+      "area": "modules",
+      "style": "clean",
+      "prompt": "In my AntelopeJS module, subscribe to the notifications channel on the shared Redis client and log every message.",
+      "expect": {
+        "skills": ["redis-interface"],
+        "mustMention": ["GetClient", "duplicate", "error"]
+      }
+    },
+    {
+      "id": "redis-cache-ttl-casual",
+      "area": "modules",
+      "style": "casual",
+      "prompt": "need to cache a user lookup in redis for 60s in my module, how",
+      "expect": {
+        "skills": ["redis-interface"],
+        "mustMention": ["GetClient"]
+      }
+    },
+    {
+      "id": "redis-not-database-decorators",
+      "area": "modules",
+      "style": "clean",
+      "prompt": "Declare a table for my orders and add a decorator-based query that lists the orders of one customer.",
+      "expect": {
+        "skills": ["database-decorators-interface"],
+        "avoid": ["redis-interface"]
+      }
+    }
+  ]
+}

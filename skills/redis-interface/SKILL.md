@@ -69,7 +69,7 @@ Declare `"antelopeJs": { "implements": ["@antelopejs/interface-redis"] }` in the
 
 - **Always `await GetClient()` fresh; never cache the client across calls.** `UnsetClient()` swaps in a new pending promise on provider stop/hot-reload, so a stashed client can be a dead connection while `GetClient()` already points at the next one.
 - **`GetClient()` never rejects - it waits.** With no provider started it stays pending, so treat the interface as a required dependency (a provider must be wired in the project config) rather than probing it with try/catch.
-- **Pub/sub needs a duplicated connection.** A subscribed ioredis connection cannot issue other commands; create subscribers with `client.duplicate()` and `subscribe`/`psubscribe` on that copy (quit the duplicate yourself when done).
+- **Pub/sub needs a duplicated connection.** A subscribed ioredis connection cannot issue other commands; create subscribers with `client.duplicate()` and `subscribe`/`psubscribe` on that copy. Attach an `error` listener with `subscriber.on("error", ...)` before `connect()`, since a client without one prints unhandled error events at shutdown. Quit the duplicate yourself when done.
 - **Do not `quit()`/`disconnect()` the shared client.** The provider owns its lifecycle; consumers only issue commands.
 - **No command typing lives in this package.** The full command surface and its types are ioredis's own - consult ioredis docs for command signatures.
 
