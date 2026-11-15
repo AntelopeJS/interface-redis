@@ -1,5 +1,30 @@
 # Changelog
 
+## v0.0.11
+
+[compare changes](https://github.com/AntelopeJS/interface-redis/compare/v0.0.10...v0.0.11)
+
+### 📖 Documentation
+
+- **readme:** Adopt the AntelopeJS framework README style ([#49](https://github.com/AntelopeJS/interface-redis/pull/49))
+
+### 📦 Build
+
+- **deps:** Move to tooling-configs 0.7 and cap @antelopejs ranges below the next minor ([#51](https://github.com/AntelopeJS/interface-redis/pull/51))
+- Move to @antelopejs/tooling-configs 0.8 and the three-tier CI ([#52](https://github.com/AntelopeJS/interface-redis/pull/52))
+
+### 🤖 CI
+
+- Run the check jobs on Windows beside Linux ([#50](https://github.com/AntelopeJS/interface-redis/pull/50))
+
+#### ⚠️ Breaking Changes
+
+- **deps:** Move to tooling-configs 0.7 and cap @antelopejs ranges below the next minor ([#51](https://github.com/AntelopeJS/interface-redis/pull/51))
+
+### ❤️ Contributors
+
+- Antony Rizzitelli
+
 ## v0.0.10
 
 [compare changes](https://github.com/AntelopeJS/interface-redis/compare/v0.0.9...v0.0.10)
