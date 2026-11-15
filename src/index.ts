@@ -36,6 +36,9 @@ export namespace internal {
  *   const client = await GetClient();
  *   const subscriber = client.duplicate({ lazyConnect: true });
  *
+ *   subscriber.on('error', (error) => {
+ *     console.error('Redis subscriber error', error);
+ *   });
  *   subscriber.on('message', (channel, message) => {
  *     console.log(`[${channel}] ${message}`);
  *   });
